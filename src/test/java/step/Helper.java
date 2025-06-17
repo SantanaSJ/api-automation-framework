@@ -1,4 +1,4 @@
-package stepDefinition;
+package step;
 
 import net.serenitybdd.model.environment.EnvironmentSpecificConfiguration;
 import net.thucydides.model.util.EnvironmentVariables;
@@ -11,7 +11,7 @@ public class Helper {
         return getProperty("api.baseurl");
     }
 
-    private String getProperty(String key) {
+    public String getProperty(String key) {
 
         String value = System.getProperty(key);
 
