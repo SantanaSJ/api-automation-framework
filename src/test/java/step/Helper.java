@@ -26,4 +26,10 @@ public class Helper {
         }
         return EnvironmentSpecificConfiguration.from(environmentVariables).getProperty(key);
     }
+
+    public String getPaginationQueryString(int pageSize, int pageNumber) {
+        //?PageSize=5&PageNumber=1
+        String queryString = "?" + "PageSize=" + pageSize + "&" + "PageNumber=" + pageNumber;
+        return queryString;
+    }
 }
