@@ -50,11 +50,11 @@ public class PartnerStep {
             String value = (String) partnerHeader.get("value");
 
             assertAll("Assert valid header values",
-                    () -> assertNotNull(id)),
+                    () -> assertNotNull(id),
                     () -> assertNotNull(key),
                     () -> assertFalse(key.isEmpty()),
                     () -> assertNotNull(value),
-                    () -> assertFalse(value.isEmpty())
+                    () -> assertFalse(value.isEmpty()));
         }
         assertAll("Assert Valid Partner payload",
                 () -> assertNotNull(partnerId),

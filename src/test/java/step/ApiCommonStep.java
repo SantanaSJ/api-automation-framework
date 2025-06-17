@@ -10,17 +10,16 @@ import org.slf4j.LoggerFactory;
 import static net.serenitybdd.rest.SerenityRest.lastResponse;
 import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.endsWith;
 import static org.hamcrest.Matchers.is;
 
 
-public class ApiCommonSteps {
+public class ApiCommonStep {
 
     @Steps
     private Helper helper;
     @Steps
     private ApiService apiService;
-    private static final Logger logger = LoggerFactory.getLogger(ApiCommonSteps.class);
+    private static final Logger logger = LoggerFactory.getLogger(ApiCommonStep.class);
 
     @Step("Validate status code")
     public void validateStatusCode(int expectedStatusCode) {

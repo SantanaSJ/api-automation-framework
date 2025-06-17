@@ -1,3 +1,4 @@
+@Customers
 Feature: Customers
 
   Customers section using User role

@@ -9,13 +9,13 @@ import step.Helper;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-public class TokenAutomationSteps {
+public class TokenAutomationStep {
 
     @Steps
     private Helper helper;
     @Steps
     private SeleniumTokenAutomation tokenAutomation;
-    private static final Logger logger = LoggerFactory.getLogger(TokenAutomationSteps.class);
+    private static final Logger logger = LoggerFactory.getLogger(TokenAutomationStep.class);
 
     @Step("Open Welcome page")
     public void openWelcomePage(String url) {
