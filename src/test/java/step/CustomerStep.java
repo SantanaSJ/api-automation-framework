@@ -1,5 +1,6 @@
 package step;
 
+import actor.Customer;
 import net.serenitybdd.annotations.Step;
 import net.serenitybdd.annotations.Steps;
 import net.serenitybdd.core.Serenity;
