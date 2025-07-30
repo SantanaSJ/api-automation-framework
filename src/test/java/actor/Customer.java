@@ -14,7 +14,7 @@ public class Customer {
         if (map.get("usernames") != null) {
             this.usernames =
                     Arrays
-                            .stream(map.get("userbanes").split(","))
+                            .stream(map.get("usernames").split(","))
                             .map(String::trim)
                             .collect(Collectors.toList());
         }
